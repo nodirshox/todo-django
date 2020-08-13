@@ -1,4 +1,4 @@
 # todo-django
 To Do App using Django framework.
 
-[Live:](https://todo-uz.herokuapp.com/)
+[Visit to my app. Don't be shy!](https://todo-uz.herokuapp.com/)
