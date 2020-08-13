@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <b><a href="{% url 'add_task' %}">Add</a></b>
+    <ol>
+        {% for task in object_list %}
+        <li><a href="{% url 'detail_task' task.id %}">{{ task.title }}</a> - {{ task.date|date:'d.m.Y' }}</li>
+        {% endfor %}
+    </ol>
+{% endblock content %}

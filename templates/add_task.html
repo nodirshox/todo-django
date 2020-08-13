@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Add Task{% endblock title %}
+
+{% block content %}
+
+<h2>Add Task</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type='submit' value='Add' class="btn btn-success">
+</form>
+
+{% endblock %}
